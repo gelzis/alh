@@ -102,9 +102,9 @@ set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 # -Wconversion
 # -Wcast-qual
-SET(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} -Wall -Wfloat-equal -ftrapv -Wpointer-arith -Wuninitialized -Winit-self -Wno-unused-parameter")
+SET(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} -Wall -ftrapv -Wpointer-arith -Wuninitialized -Winit-self -Wno-unused-parameter")
 if(CMAKE_COMPILER_IS_GNUCXX)
-    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wextra -Woverloaded-virtual")
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wextra -Woverloaded-virtual -Wfloat-equal")
 endif(CMAKE_COMPILER_IS_GNUCXX)
 
 set(CMAKE_CXX_FLAGS_DEBUG_INIT "-fstrong-eval-order -Wcomma-subscript -fstack-protector-all")
